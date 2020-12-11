@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>69-dars</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="container vh-100 pt-5 d-flex justify-content-center bg-primary">
+    <form class="temperature-form js-temperature__form" action="https://echo.academy.ru" method="GET">
+
+      <h1 class="temperature-form__heading">Temperatura konvertari</h1>
+
+      <div class="temperature__celsius-wrapper">
+        <label for="celsius">Harorat selsiyda</label>
+        <input class="temperature-form__input-celsius js-temperature-form__input-celsius" step="any" type="number" id="celsius" name="celsius" required>
+      </div>
+
+      <div class="temperature__fahrenheit-wrapper">
+        <span>Harorat Farengeytda</span>
+        <span class="temperature__fahrenheit-result js-temperature__fahrenheit-result"></span>
+      </div>
+
+      <button type="submit">Hisobla</button>
+
+    </form>
+  </div>
+
+  <hr class="bg-danger p-3">
+
+  <div class="container vh-100 pt-5 d-flex flex-column justify-content-center bg-primary">
+
+    <h1 class="mb-0 mb-5 text-center">Kim birinchi bo-rish-ga!</h1>
+
+    <form class="yugurish__form input-group mb-5 justify-content-center" action="https://echo.academy.ru" method="GET">
+
+      <label class="mr-3" for="yugurish">Masofa</label>
+      <input class="yugurish__input mr-4" type="number" step="any" placeholder="... km" required>
+
+      <button type="submit">Hisobla davay</button>
+
+    </form>
+
+    <ul class="js-run list-unstyled d-flex justify-content-between text-center">
+      <li class="item border px-5 py-2 w-25">
+        <p class="h5">Piyoda</p>
+        <div class="js-result-walker"></div>
+      </li>
+      <li class="item border px-5 py-2 w-25">
+        <p class="h5">Velik</p>
+        <div class="js-result-bike"></div>
+      </li>
+      <li class="item border px-5 py-2 w-25">
+        <p class="h5">Moshina</p>
+        <div class="js-result-avto"></div>
+      </li>
+      <li class="item border px-5 py-2 w-25">
+        <p class="h5">Samolyot</p>
+        <div class="js-result-plane"></div>
+      </li>
+    </ul>
+
+  </div>
+
+
+  <hr class="bg-danger p-3">
+
+  <div class="container vh-100 pt-5 d-flex flex-column justify-content-center bg-warning">
+    <h1 class="text-center mb-5">Yugurishga chiqamizmi?</h1>
+    <div class="yes-no-wrapper text-center mb-5 h1">
+      <span class="yes">YES</span>
+      <span class="slash">/</span>
+      <span class="no">NO</span>
+    </div>
+
+    <form class="yes-no__form input-group flex-column text-center" action="https://echo.htmlacademy.ru" method="GET">
+
+      <label>
+        <span>Havo harorati</span>
+        <input class="yes-no__form-input" type="number" name="temperatura" step="any">
+      </label>
+
+      <label>
+        <input class="yes-no__form-checkbox-rain" type="checkbox" name="rain">
+        <span class="ml-3">Yomg'ir yog'yaptimi?</span>
+      </label>
+      <label>
+        <input class="yes-no__form-checkbox-gym" type="checkbox" name="gym">
+        <span class="ml-3">Trenajor zali ochiqmi?</span>
+      </label>
+
+    </form>
+  </div>
+
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
